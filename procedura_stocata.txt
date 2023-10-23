@@ -1,0 +1,11 @@
+DELIMITER $$
+--
+-- Procedura
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Get1203a` ()  BEGIN
+ 	SELECT * FROM film
+	WHERE gen = 'drama' AND an>2019 AND an<2022
+	ORDER BY titlu ASC, an DESC;
+END$$
+
+ 
